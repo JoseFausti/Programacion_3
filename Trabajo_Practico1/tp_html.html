@@ -1,0 +1,128 @@
+<!-- 4.1 Estructura Básica del Documento HTML -->
+<!DOCTYPE html>
+<html lang="es"> <!-- Uso del elemento <html> con un atributo lang para especificar el idioma del contenido (español). -->
+<!-- Inclusión de la etiqueta <head> para agregar metadatos, como charset, viewport, y el <title>. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        header, footer {
+            padding: 20px;
+            background-color: #333; 
+            color: #fff;
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+    <title>Mi Primer HTML</title>
+</head>
+<!-- La etiqueta <body> que contendrá todo el contenido visible de la página -->
+<body>
+    <header>
+        <h1>Mi Primer Documento HTML</h1>
+    </header>
+    <ol>
+        <li>
+            <h3>Estructura Básica del Documento HTML</h3>
+            <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título</p>
+        </li>
+   
+        <!-- 4.2 Encabezados y Propiedades del Texto -->
+        <li>
+            <!-- Aplicar estilos de texto directamente en el HTML usando atributos style -->
+            <h3>Encabezados y Propiedades del Texto</h3>
+            <p><b>Este es un texto en negrita.</b></p>
+            <p><i>Este es un texto en cursiva.</i></p> 
+            <p><u>Este es un texto subrayado.</u></p> 
+            <p style="font-size: 20px; color: blue;">Este es un texto con estilos.</p> 
+        </li>
+
+        <!-- 4.3 Divisiones y Agrupación de Contenido -->
+        <li>
+            <div>
+                <h3>Divisiones y Agrupación de Contenido</h3>
+                <section>
+                    <h4><b>Sección 1</b></h4>
+                    <p>Contenido de la primera sección agrupada en un div</p>
+                </section>
+                <section>
+                    <h4><b>Sección 2</b></h4>
+                    <p>Contenido de la segunda sección agrupada en un div</p>
+                </section>
+            </div>
+        </li>
+
+        <!-- 4.4 Enlaces y Listas -->
+        <li>
+            <h3>Enlaces y Listas</h3>
+            <p>Visita nuestro <a href="#">sitio web</a> para mas informacion</p>
+            <nav>
+                <p>Enlaces internos:</p>
+                <ul>
+                    <li><a href="#estructura">Ir a Estructura</a></li>
+                    <li><a href="#multimedia">Ir a Multimedia</a></li>
+                    <li><a href="#formulario">Ir a Formulario</a></li>
+                </ul>
+            </nav>            
+            <p>Lista desordenada:</p>
+            <ul>
+                <li>Primer ítem de una lista desordenada</li>
+                <li>Segundo ítem de una lista desordenada</li>
+            </ul>
+            <p>Lista ordenada:</p>
+            <ol>
+                <li>Primer ítem de una lista ordenada</li>
+                <li>Segundo ítem de una lista ordenada</li>
+            </ol>
+        </li>
+
+        <!-- 4.5 Elementos Multimedia -->
+        <li>
+            <h3>Elementos Multimedia</h3>
+            <picture>
+                <source srcset="/src/img/blog1.webp" type="image/webp">
+                <source srcset="/src/img/blog1.jpg" type="image/jpeg">
+                <img loading="lazy" src="/img/blog1.jpg" alt="Imagen Blog1">
+            </picture>
+            <video autoplay muted loop controls>
+                <source src="/src/video/dj.mp4" type="video/mp4" />
+                <source src="/src/video/dj.ogv"  type="video/ogg" />
+                <source src="/src/video/dj.webm"  type="video/webm" />
+            </video>
+            <audio autoplay muted loop controls>
+                <source src="/src/audio/BOCA DE MI VIDA ► con letra.mp3" type="audio/mp3"> <!-- Unica finalidad del audio es el entretenimiento y aprendizaje :) -->
+            </audio>
+        </li>
+
+        <li>
+            <!-- 4.6 Tablas -->
+            <h3>Tablas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </li>
+    </ol>
+    <!-- 4.8 Semántica en HTML -->
+    <footer>
+        <p>Jose Fausti. Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
