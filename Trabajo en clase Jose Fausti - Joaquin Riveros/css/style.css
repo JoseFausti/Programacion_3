@@ -1,0 +1,122 @@
+/** GLOBALES **/
+:root {
+    --primario: rgb(239, 239, 239);
+    --blanco: #fff;
+    --negro: #000;
+    --neon: #0cedf5;
+    --fuentePrincipal: 'Arial';
+    --shadow: .1rem .1rem .4rem var(--blanco);
+}
+
+html, body {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--negro) 80%, var(--neon) 100%);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    color: var(--primario);
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    color: var(--primario);
+    text-align: center;
+    color: var(--primario);
+    font-family: var(--fuentePrincipal);
+    text-shadow: var(--shadow);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+label{
+    color: var(--blanco);
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    border: .2rem solid var(--blanco);
+    border-radius: .2rem;
+    background: linear-gradient(to bottom, var(--negro) 80%, var(--neon) 100%);
+}
+
+/* Formulario */
+.contenedor_form{
+    border: .3rem solid var(--blanco);
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+    text-shadow: var(--shadow);
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+}
+
+.loggin{
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: .5rem 0;
+}
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.boton {
+    width: 50%;
+    margin: 2rem 0;
+    border: .2rem solid var(--primario);
+    border-radius: 2rem;
+    background-color: var(--negro);
+    color: var(--primario);
+    padding: .5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color .15s linear;
+}
+
+.boton:hover {
+    background-color: var(--neon);
+    color: var(--negro);
+}
+
+
+
+
