@@ -1,0 +1,47 @@
+
+### Ejercicios con Fetch y Promesas
+
+1. **Obtener datos de un usuario aleatorio**
+   - **API Endpoint**: https://randomuser.me/api/
+   - **Documentación**: https://randomuser.me/
+   - **Descripción**: La API de Random User Generator permite obtener datos ficticios de un usuario, 
+   incluyendo nombre, ubicación, imagen, y más. En este ejercicio, se utiliza el endpoint principal 
+   para obtener un usuario aleatorio y se muestra su información en el contenedor HTML con el id="userInfo".
+
+2. **Mostrar una lista de posts**
+   - **API Endpoint**: https://jsonplaceholder.typicode.com/posts
+   - **Documentación**: https://jsonplaceholder.typicode.com/
+   - **Descripción**: JSONPlaceholder es una API de prueba que proporciona datos simulados como posts,
+    comentarios, tareas, etc. En este ejercicio, se utiliza el endpoint "/posts" para obtener una lista de publicaciones,
+     mostrando los títulos de los primeros 10 posts en una lista desordenada dentro del contenedor HTML con el id="postsList".
+
+
+
+3. **Mostrar la temperatura actual**
+   - **API Endpoint**: https://api.openweathermap.org/data/2.5/weather
+   - **Documentación**: https://openweathermap.org/current
+   - **Descripción**: OpenWeatherMap ofrece datos meteorológicos actuales, previsiones,
+    e históricos mediante su API. En este ejercicio, se consulta el endpoint "/weather"
+     para obtener la temperatura y la descripción del clima actual de la ciudad de Mendoza, 
+     Argentina. Los resultados se muestran en el contenedor HTML con el id="weatherInfo"
+   -**recursos** 
+            --apikey : c61e0400e304a834d4159274cfc06146
+            
+    -**ayudas**
+        -parametros a utilizar =  units, lang, 
+        -ver como pasar el parametro de pais y region link:https://openweathermap.org/current#name
+
+
+4. **Mostrar una imagen de un perro aleatorio**
+   - **API Endpoint**: https://dog.ceo/api/breeds/image/random
+   - **Documentación**: https://dog.ceo/dog-api/
+   - **Descripción**: La Dog API proporciona imágenes aleatorias de diferentes razas de perros. 
+   En este ejercicio, se utiliza el endpoint "/breeds/image/random" para obtener una imagen aleatoria 
+   de un perro y se muestra en el contenedor HTML con el id="dogImage".
+
+5. **Mostrar una lista de tareas**
+   - **API Endpoint**: https://jsonplaceholder.typicode.com/todos
+   - **Documentación**: https://jsonplaceholder.typicode.com/
+   - **Descripción**: Similar al ejercicio 2, se utiliza JSONPlaceholder para obtener datos simulados. 
+   En este caso, se usa el endpoint "/todos" para obtener una lista de tareas. Se muestran las primeras 
+   5 tareas en una lista desordenada, indicando si están completadas o no, en el contenedor HTML con el id="todoList".
