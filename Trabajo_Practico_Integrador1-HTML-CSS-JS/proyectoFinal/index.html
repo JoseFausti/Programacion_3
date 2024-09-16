@@ -22,7 +22,7 @@
           <button class="buttonSearch">Buscar <span class="material-symbols-outlined">search</span></button>
         </div>
         <div>
-          <button class="header__buttonAdd">Agregar Elemento <span class="material-symbols-outlined">library_add</span></button>
+          <button id="buttonAddElement" class="header__buttonAdd">Agregar Elemento <span class="material-symbols-outlined">library_add</span></button>
         </div>
        </div>
       </div>
@@ -32,10 +32,33 @@
       <div class="container__view">
         <aside class="listAside">
           <h2>Categorias<span class="material-symbols-outlined">filter_list</span></h2>
-          <ul id="listFilter"/>
+          <ul id="listFilter"></ul>
         </aside>
-        <div class="store">
+        <div class="store" id="storeContainer"></div>
 
+      </div>
+      <!-- PopUp -->
+      <div class="popUpContainer__principal" id="modalPopUp">
+        <div class="popUpContainer">
+          <div class="containerTitlePopUp">
+            <h1>Agregar o Modificar un producto</h1>
+          </div>
+          <div class="containerInputs__popUp">
+            <input placeholder="Ingrese un nombre" id="nombre" type="text"/>
+            <input placeholder="Ingrese una imagen" id="img" type="text"/>
+            <input placeholder="Precio" value="0" id="precio" type="number"/>
+            <select id="categoria">
+              <option>Seleccione una categoria</option>
+              <option>Gaseosas</option>
+              <option>Hamburgesas</option>
+              <option>Papas</option>
+            </select>
+          </div>
+          <div class="containerButtonsPopUp">
+            <button class="buttonPopUp cancel" id="cancelButton">Cancelar</button>
+            <button class="buttonPopUp accept" id="acceptButton">Aceptar</button>
+            <button class="buttonPopUp delete" id="deleteButton">Eliminar</button>
+          </div> 
         </div>
       </div>
     </main>
