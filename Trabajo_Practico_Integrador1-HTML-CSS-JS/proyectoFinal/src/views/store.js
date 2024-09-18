@@ -1,4 +1,6 @@
-import { handleGetProductLocalStorage } from "../services/localstorage"
+import { setproductoActivo } from "../../main";
+import { handleGetProductLocalStorage } from "../persistence/localStorage";
+import { openModal } from "./modal";
 
 /* ===STORE=== */
 
@@ -20,24 +22,25 @@ export const handleRenderList = (productosIn)=>{
         if (productos.length > 0) {
                 const productosHTML = productos.map((producto, index)=>{
                 return `
-                <div id="product-${producto.categories}-${index}">
+                <div class="containerTargetItem" id="product-${producto.categories}-${index}">
                     <div>
                         <img src="${producto.imagen}"/>
                         <div>
                             <h2>${producto.nombre}</h2>
                         </div>
-                        <div>
+                        <div class="targetProps">
                             <p><b>Precio: </b>${producto.precio}</p>
-                            <p><b>Categoria: </b>${producto.categories}</p>
                         </div>
                     </div>
                 </div>`;
             });
             // Retorna la seccion con todos los elementos dentro
             return `
-            <section>
-                <h3>${title}</h3>
-                <div>
+            <section class="sectionStore">
+                <div class="containerTitleSection">
+                    <h3>${title}</h3>
+                </div>
+                <div class="containerProductStore">
                     ${productosHTML.join("")}
                 </div>
             </section>
@@ -60,7 +63,8 @@ export const handleRenderList = (productosIn)=>{
             productsIn.forEach((element, index) => {
                 const productContainer = document.getElementById(`product-${element.categories}-${index}`);
                 productContainer.addEventListener("click", ()=>{
-                    console.log("productoActivo", element);
+                    setproductoActivo(element);
+                    openModal();
                 });
             }); 
         }
