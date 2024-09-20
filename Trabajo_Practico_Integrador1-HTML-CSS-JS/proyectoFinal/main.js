@@ -1,5 +1,4 @@
 import { renderCategories } from "./src/services/categories";
-import { setInLocalStorage } from "./src/persistence/localStorage";
 import { handleGetProductsToStore } from "./src/views/store";
 import './style.css';
 import { openModal } from "./src/views/modal";
